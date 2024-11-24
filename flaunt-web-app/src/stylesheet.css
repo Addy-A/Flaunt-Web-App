@@ -1,0 +1,76 @@
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+.app-button {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+  background: rgb(37, 70, 70);
+	color: #ffffff;
+	border-radius: 10px;
+	padding: 8px;
+	cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+
+.app-button:hover {
+  background: rgb(73, 117, 117);
+}
+
+/* @keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+
+canvas {
+  opacity: 1;
+  touch-action: none;
+  /* animation: fade-in 5s ease 0.5s forwards; */
+}
+
+.BoxOverlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 10px;
+  animation: fade-in 0.5s ease 0.5s forwards;
+  display: flex;
+  flex-direction: column;
+}
+
+.brush-switcher {
+  display: flex;
+  flex-direction: column;
+}
+
+.brush-switcher button, .recenter-button {
+  margin-top: 10px;
+  background: rgb(26, 37, 46);
+	color: #ffffff;
+	border-radius: 10px;
+	padding: 8px;
+	cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+
+.brush-switcher button:hover, .recenter-button:hover {
+  background-color: #ffffff;
+  color: rgb(3, 29, 49);
+}
